@@ -1,11 +1,14 @@
 extends RigidBody2D
 
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
-var speed = 500
+var speed = 0
+var _max_speed = 500
+var _acceleration = 0
 
 func _ready():
-	# Called every time the node is added to the scene.
-	# Initialization here
-	pass
+  set_process(true)
+
+func _process(delta):
+  speed += _acceleration
+  speed = min(speed, _max_speed)
+  if (speed < _max_speed):
+      _acceleration += delta
