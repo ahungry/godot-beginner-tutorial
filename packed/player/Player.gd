@@ -15,4 +15,7 @@ func _process(delta):
       _acceleration += delta
 
 func _on_body_enter(other):
-  print(other.get_name())
+  if (other.is_in_group("enemy")):
+    other.hit_by_player()
+  speed = 0
+  set_process(false)
