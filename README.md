@@ -15,3 +15,13 @@ http://codetuto.com/2017/01/godot-engine-game-tutorial-beginners-create-2d-racin
 # Usage
 
 Load up Godot, open this as a project, press F5 to run it.
+
+# Todo
+
+Compile to Android and browser and desktop!
+
+https://godot.readthedocs.io/en/3.0/development/compiling/compiling_for_x11.html
+
+https://godot.readthedocs.io/en/3.0/development/compiling/compiling_for_android.html
+
+https://godot.readthedocs.io/en/3.0/development/compiling/compiling_for_web.html
