@@ -39,6 +39,6 @@ drag_margin/bottom = 0.2
 
 [node name="Enemy" parent="." instance=ExtResource( 4 )]
 
-transform/pos = Vector2( 71.8854, -129.872 )
+transform/pos = Vector2( 255.665, -112.249 )
 
 
