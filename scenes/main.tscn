@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=1]
+[gd_scene load_steps=6 format=1]
 
 [ext_resource path="res://assets/images/road.png" type="Texture" id=1]
 [ext_resource path="res://scripts/bgscroll.gd" type="Script" id=2]
 [ext_resource path="res://packed/player/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scripts/spawner.gd" type="Script" id=4]
+[ext_resource path="res://scripts/touchleft.gd" type="Script" id=5]
 
 [node name="main" type="Node2D"]
 
@@ -44,5 +45,29 @@ wait_time = 3.0
 one_shot = false
 autostart = true
 script/script = ExtResource( 4 )
+
+[node name="left" type="TouchScreenButton" parent="."]
+
+transform/pos = Vector2( -44.5543, 0 )
+transform/scale = Vector2( 307.582, 956.86 )
+normal = null
+pressed = null
+bitmask = null
+passby_press = false
+action = "ui_left"
+visibility_mode = 0
+script/script = ExtResource( 5 )
+
+[node name="right" type="TouchScreenButton" parent="."]
+
+transform/pos = Vector2( 281.483, 4.10114 )
+transform/scale = Vector2( 307.582, 956.86 )
+normal = null
+pressed = null
+bitmask = null
+passby_press = false
+action = "ui_right"
+visibility_mode = 0
+script/script = ExtResource( 5 )
 
 
