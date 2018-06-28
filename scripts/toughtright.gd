@@ -9,7 +9,7 @@ func _ready():
 
 func _on_pressed():
   print("Pushed me")
-  _player._bdirection = -1
+  _player._bdirection = 1
 
 func _on_released():
   print("Released me")
